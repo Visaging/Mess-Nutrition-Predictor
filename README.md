@@ -77,7 +77,8 @@ To verify the functionality of the system, follow these steps:
 
 ## 8. Screenshots
 **1. Dashboard**
-TBA
+<img width="1920" height="1080" alt="Dashboard" src="https://github.com/user-attachments/assets/21698542-079e-4058-ac54-5539e1a846a4" />
 
 **2. Live Prediction**
-TBA
+<img width="1920" height="1080" alt="Test Run" src="https://github.com/user-attachments/assets/9445ddff-2554-4340-94bc-fd0374eb656b" />
+
