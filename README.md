@@ -1,7 +1,7 @@
 # Mess Nutrition Predictor
 
 ## 1. Project Overview
-We've all been there: trying to hit our daily protein or calorie goals while relying on a college mess with strict, conditional, and ever-changing menus. The Campus Mess Macro Predictor is a Machine Learning web application built for the Bring Your Own Project (BYOP) capstone. It replaces the guesswork of estimating macros from dining hall buffets with an AI-driven system that predicts your exact nutritional intake based on the specific campus mess and meal combinations you choose.
+We've all been there: attempting to achieve our daily protein or calorie goals while eating at a college mess with rigorous, restricted, and frequently changing menus. The Mess Nutrition Predictor is a machine learning-powered web application. It substitutes the time-consuming job of calculating macros from dining hall meals with an AI-powered system that calculates your exact nutritional intake depending on the school mess and meal combinations you choose.
 
 ## 2. Features
 * **Multi-Mess Support:** The model is trained on a custom dataset featuring 84 real-world meal combinations across 5 distinct campus dining halls (Mayuri Boys, Mayuri Girls, Rassense, Safal, JMB, and AB Caterers).
