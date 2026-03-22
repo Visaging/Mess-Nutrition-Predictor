@@ -1,12 +1,12 @@
 # Mess Nutrition Predictor
 
 ## 1. Project Overview
-We've all been there: attempting to achieve our daily protein or calorie goals while eating at a college mess with rigorous, restricted, and frequently changing menus. The Mess Nutrition Predictor is a machine learning-powered web application. It substitutes the time-consuming job of calculating macros from dining hall meals with an AI-powered system that calculates your exact nutritional intake depending on the school mess and meal combinations you choose.
+We've all experienced it: trying to meet our daily protein or calorie goals while eating at a college dining hall with strict, limited, and often changing menus. The Mess Nutrition Predictor is a web application that uses machine learning. It replaces the tedious task of calculating macros from dining hall meals with an AI system that figures out your exact nutritional intake based on the school dining hall and the meal choices you make.
 
 ## 2. Features
-* **Multi-Mess Support:** The model is trained on a custom dataset featuring 84 real-world meal combinations across 5 distinct campus dining halls (Mayuri Boys, Mayuri Girls, Rassense, Safal, JMB, and AB Caterers).
-* **Cascading UI Logic:** The intelligent user interface dynamically filters your available meal options. For example, selecting "JMB Mess" on "Thursday" will only show the meals actually served there that day.
-* **Instant Visual Feedback:** Displays the predicted macronutrients in a clean, modern dashboard format using interactive metric cards.
+* **Multi-Mess Support:** The training of the model relies on a unique dataset that consists of 84 actual meal combinations. These combinations originate from five distinct campus dining spots: Mayuri Boys, Mayuri Girls, Rassense, Safal, JMB, and AB Caterers
+* **Cascading UI Logic:** The interface is designed to filter meal choices as you make them. Select "JMB Mess" for "Thursday," and you'll only see what's available that day.
+* **Instant Visual Feedback:** Dynamic metric cards present the predicted macronutrients, all laid out in a modern, easy-to-read dashboard.
 
 ## 3. Technologies Used
 * **Language:** Python
@@ -70,9 +70,9 @@ To verify the functionality of the system, follow these steps:
 * _The ML pipeline processes the inputs, transforms the text into numerical data using OneHotEncoding, and successfully outputs the predicted Protein, Carbs, Fats, and Calories in the metric cards._
 
 ## 7. Future Enhancements
-* **Cloud Database Integration:** Migrate mess_nutrition.csv to a cloud database (like PostgreSQL or Firebase) so caterers can log in and update their weekly menus live.
-* **API Deployment:** Wrap the Scikit-Learn model in FastAPI to allow mobile apps or campus websites to pull macro predictions remotely.
-* **Personalized Fitness Tracking:** Allow users to create profiles, input their body weight, and track their daily AI-predicted macros against personal fitness goals.
+* **Cloud Database Integration:** Transfer `mess_nutrition.csv` to a cloud-based database (such as PostgreSQL or Firebase) to allow caterers to log in and modify their weekly menus in real-time
+* **API Deployment:** Encapsulate the Scikit-Learn model within FastAPI to enable mobile applications or campus websites to fetch macro predictions from a distance
+* **Personalized Fitness Tracking:** Enable users to set up profiles, enter their body weight, and monitor their daily AI-predicted macros in relation to individual fitness objectives.
 
 ## 8. Screenshots
 **1. Dashboard**
