@@ -1,4 +1,4 @@
-# VIT Lost & Found System
+# Mess Nutrition Predictor
 
 ## 1. Project Overview
 We've all been there: trying to hit our daily protein or calorie goals while relying on a college mess with strict, conditional, and ever-changing menus. The Campus Mess Macro Predictor is a Machine Learning web application built for the Bring Your Own Project (BYOP) capstone. It replaces the guesswork of estimating macros from dining hall buffets with an AI-driven system that predicts your exact nutritional intake based on the specific campus mess and meal combinations you choose.
