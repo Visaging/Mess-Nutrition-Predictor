@@ -1,0 +1,3 @@
+@echo off
+echo Starting the Campus Mess Predictor...
+python -m streamlit run app.py

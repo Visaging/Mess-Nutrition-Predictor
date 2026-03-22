@@ -1,0 +1,85 @@
+Mess_Name,Day,Breakfast_Main,Lunch_Main,Snack_Choice,Dinner_Main,Protein_g,Carbs_g,Fats_g,Total_kcal
+Mayuri Boys,Sunday,Masala Dosa + Boiled Egg,Chicken Biryani,Pasta,Dal Makhani,85,230,65,1845
+Mayuri Boys,Sunday,Mix Veg Dosa,Butter Paneer,Pasta,Dal Makhani,55,240,70,1810
+Mayuri Boys,Monday,Idli + Vada,Dal Fry + Sev Tamatar,Kachori,Egg Gravy,60,260,60,1820
+Mayuri Boys,Monday,Idli + Vada,Dal Fry + Jeera Aloo,None,Kadhai Mix Veg,40,240,40,1480
+Mayuri Boys,Tuesday,Poha + Jalebi,White Channa,Samosa,Bhindi Masala + Dal Tadka,45,290,65,1925
+Mayuri Boys,Tuesday,Poha,White Channa,None,Bhindi Masala + Dal Tadka,35,230,45,1465
+Mayuri Boys,Wednesday,Pav Bhaji + Boiled Egg,Veg Kofta,Cutlet,Kadai Chicken,90,240,75,1995
+Mayuri Boys,Wednesday,Upma,Veg Kofta,Cutlet,Paneer Masala,55,250,70,1850
+Mayuri Boys,Thursday,Aloo Paratha + Dahi,Rajma,Noodles,Egg Gravy,65,280,65,1965
+Mayuri Boys,Thursday,Aloo Paratha + Dahi,Rajma,Fried Idli,Green Peas + Dal Fry,50,290,55,1855
+Mayuri Boys,Friday,Onion Uthappam + Boiled Egg,Kadhi Pakoda,Vada Pav,Tandoori Butter Chicken,95,230,80,2020
+Mayuri Boys,Friday,Onion Uthappam,Kadhi Pakoda,Vada Pav,Kadai Paneer,60,240,75,1875
+Mayuri Boys,Saturday,Chole Bhature,Dal Makhani + Corn Palak,Bread Pakoda,Lobia Gravy,55,310,80,2180
+Mayuri Boys,Saturday,Chole Bhature,Dal Makhani,None,Lobia Gravy,45,260,60,1760
+Rassense,Sunday,Masala Dosa + Boiled Egg,Veg Biryani,Pasta,Dal Makhani,60,240,60,1740
+Rassense,Sunday,Mix Veg Dosa,Chicken Biryani,None,Aloo Peas Masala,75,210,55,1635
+Rassense,Monday,Idli + Vada,Sev Tamatar + Dal Fry,Kachori,Kadhai Mix Veg,45,250,50,1630
+Rassense,Monday,Idli + Vada,Jeera Aloo,None,Egg Gravy,62,230,60,1710
+Rassense,Tuesday,Pongal + Jalebi,Mix Dal,Aloo Gobi Mutter,Dal Tadka,38,270,50,1680
+Rassense,Tuesday,Poha,White Channa,Samosa,Bhindi Masala,42,260,55,1700
+Rassense,Wednesday,Upma + Boiled Egg,Dal Tadka,Cutlet,Kadai Chicken,85,210,65,1765
+Rassense,Wednesday,Pav Bhaji,Veg Kofta,None,Paneer Masala,48,250,68,1800
+Rassense,Thursday,Aloo Paratha + Dahi,Rajma,Fried Idli,Green Peas Masala,52,280,58,1850
+Rassense,Thursday,Aloo Paratha + Dahi,Rajma,Noodles,Egg Gravy,68,290,68,2040
+Rassense,Friday,Onion Uthappam,Dal Fry,Vada Pav,Kadai Paneer,55,260,72,1900
+Rassense,Friday,Onion Uthappam + Boiled Egg,Kadhi Pakoda,None,Tandoori Butter Chicken,88,210,70,1820
+Rassense,Saturday,Chole Bhature,Dal Makhani,Bread Pakoda,Veg Pulao + Lobia Gravy,55,300,75,2095
+Rassense,Saturday,Chole Bhature,Corn Palak,None,Lobia Gravy,48,270,65,1855
+Safal,Sunday,Masala Dosa,Chicken Biryani,Pasta,Dal Makhani,80,225,62,1778
+Safal,Sunday,Mix Veg Dosa,Butter Paneer,None,Aloo Peas Masala,48,205,58,1534
+Safal,Monday,Idli + Vada,Dal Fry,Kachori,Egg Gravy,58,250,55,1727
+Safal,Monday,Idli + Vada,Jeera Aloo,None,Kadhai Mix Veg,38,235,42,1470
+Safal,Tuesday,Poha,Mix Dal,Samosa,Dal Tadka,40,280,60,1820
+Safal,Tuesday,Pongal,White Channa,None,Bhindi Masala,36,225,48,1476
+Safal,Wednesday,Upma + Boiled Egg,Veg Kofta,Cutlet,Kadai Chicken,88,235,72,1940
+Safal,Wednesday,Pav Bhaji,Dal Tadka,Cutlet,Paneer Masala,52,245,68,1800
+Safal,Thursday,Aloo Paratha + Dahi,Rajma,Noodles,Green Peas Masala,48,285,60,1872
+Safal,Thursday,Aloo Paratha + Dahi,Rajma,Fried Idli,Egg Gravy,62,295,62,1926
+Safal,Friday,Onion Uthappam + Boiled Egg,Kadhi Pakoda,Vada Pav,Tandoori Butter Chicken,92,225,75,1943
+Safal,Friday,Onion Uthappam,Dal Fry,None,Kadai Paneer,58,235,70,1794
+Safal,Saturday,Chole Bhature,Dal Makhani,Bread Pakoda,Lobia Gravy,52,305,78,2130
+Safal,Saturday,Chole Bhature,Corn Palak,None,Lobia Gravy,46,265,62,1802
+JMB,Sunday,Idli + Vada,Chawla Gravy + Veg Biryani,Pasta,Kadhai Paneer,45,250,65,1765
+JMB,Sunday,Idli + Vada,Dal Fry + Veg Biryani,None,Dal Tadka,35,230,45,1385
+JMB,Monday,Poha + Dal Kachori,Kadi Pakoda,Noodles,Shahi Paneer,40,260,70,1830
+JMB,Monday,Poha,Dal Fry,None,Punjabi Dum Aloo,30,240,50,1530
+JMB,Tuesday,Aloo Paratha,Punjabi Chole,Sandwich,Methi Matar Malai,42,270,68,1860
+JMB,Tuesday,Aloo Paratha,Dal Tadka,None,Dry Bhindi Masala,32,240,55,1603
+JMB,Wednesday,Poori + Aloo,Jeera Aloo + Dal Tadka,Samosa,Rajma Masala,38,280,75,1947
+JMB,Wednesday,Poori + Aloo,Dal Tadka,None,Dal Hari Mirch,30,230,60,1580
+JMB,Thursday,Uttappam,Gatte ki Sabji + Dal,Vada Pav,Mutter Paneer + Dal Makhani,50,265,75,1935
+JMB,Thursday,Uttappam,Sada Bati + Churma,None,Mutter Paneer,45,290,80,2060
+JMB,Friday,Masala Dosa,Chawla Masala,Veg Cutlet,Aloo Soya Masala,48,255,60,1752
+JMB,Friday,Masala Dosa,Fry Dal,None,Dal Makhani,35,220,55,1515
+JMB,Saturday,Chole Bhature,Rajma Masala,Aloo Pyaz Pakode,Veg Kofta,46,285,80,2044
+JMB,Saturday,Chole Bhature,Mix Veg,None,Dal Tadka,34,250,65,1721
+AB Caterers,Sunday,Plain Dosa,Chicken Dum Biryani,Dahi Vada,Dal Makhani,75,240,65,1845
+AB Caterers,Sunday,Plain Dosa,Vegetable Biryani,None,Dum Aloo Masala,35,260,50,1630
+AB Caterers,Monday,Idly + Vada + Boiled Egg,Soyabean Masala,Masala Sandwich,Egg Bhurji,65,220,60,1680
+AB Caterers,Monday,Idly + Vada,Pakoda Kuzhambu,None,Besan Ka Gatta,40,230,55,1575
+AB Caterers,Tuesday,Aloo Paratha,Chole Masala,Pasta,Kadi Pakoda,45,280,65,1885
+AB Caterers,Tuesday,Aloo Paratha,Daal Tadka,None,Kushka Masala,35,240,50,1550
+AB Caterers,Wednesday,Pongal,Chawli Masala,Chana Chat,Kadhai Chicken,80,230,70,1870
+AB Caterers,Wednesday,Poha,Moong Daal,None,Paneer Pasantha,45,210,60,1560
+AB Caterers,Thursday,Pav Bhaji + Boiled Egg,Kala Chana,Veg Puff,Veg Jalfrezi,55,250,65,1805
+AB Caterers,Thursday,Rava Veg Khichdi,Gobi Fry,None,Lauki Chana,30,220,45,1405
+AB Caterers,Friday,Veg Uthappam,Rajma Masala,Samosa,Chicken Fry,85,260,75,2055
+AB Caterers,Friday,Veg Uthappam,Koottu,None,Kadhai Paneer,48,230,65,1697
+AB Caterers,Saturday,Bhatura + Chole,Tomato Dal,Aloo Onion Kachori,Egg Curry,50,290,80,2080
+AB Caterers,Saturday,Poori Aloo,Brinjal Gravy,None,Veg Manchurian,28,260,60,1692
+Mayuri Girls,Sunday,Masala Dosa,Chicken Dum Biryani,Noodle,Dal Makhani,72,235,60,1768
+Mayuri Girls,Sunday,Plain Dosa,Paneer Butter Masala,None,Mix Veg,40,210,55,1530
+Mayuri Girls,Monday,Idly + Vada,Rajma Masala,Appe,Egg Bhurji + Aloo Paneer Kofta,55,240,58,1702
+Mayuri Girls,Monday,Idly,Veg Pulao,None,Aloo Gobi Masala,25,220,45,1385
+Mayuri Girls,Tuesday,Aloo Paratha + Boiled Egg,Channa Masala,Pani Poori,Masoor Dal + Veg Manchurian,52,260,50,1698
+Mayuri Girls,Tuesday,Aloo Paratha,Dal Tadka,None,Sev Tamatar,30,230,45,1445
+Mayuri Girls,Wednesday,Onion Uthappam,Aloo Soya Semi Gravy,Samosa,Veg Kolhapuri,48,250,65,1777
+Mayuri Girls,Wednesday,Veg Uthappam,Moong Dal,None,Veg Kolhapuri,32,220,50,1458
+Mayuri Girls,Thursday,Pav Bhaji,Pappu Kootu,Pasta,Butter Chicken,82,235,70,1898
+Mayuri Girls,Thursday,Vermicelli Kichidi,Veg Dry,None,Butter Paneer,45,215,65,1625
+Mayuri Girls,Friday,Pongal + Sprouts,Green Peas Pulao,Spring Roll,Masala Dal Veg-65,38,245,55,1627
+Mayuri Girls,Friday,Pongal,Brinji Masala Dry,None,Dum Aloo,22,225,45,1393
+Mayuri Girls,Saturday,Bhatura + Boiled Egg,Besan Gatte,Burger,Kadai Chicken,85,270,75,2095
+Mayuri Girls,Saturday,Poori,Jeera Aloo,None,Kadai Paneer,48,240,65,1737
