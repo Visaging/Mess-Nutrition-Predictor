@@ -19,9 +19,8 @@ We've all been there: trying to hit our daily protein or calorie goals while rel
 ```text
 Mess-Nutrition-Predictor/
 ├── Screenshots/
-    ├── app_dashboard.png
-    ├── cascading_dropdowns.png
-    ├── successful_prediction.png
+    ├── Dashboard.png
+    ├── Live-Prediction.png
 ├── app.py
 ├── mess_nutrition.csv
 └── README.md
