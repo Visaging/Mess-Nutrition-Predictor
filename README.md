@@ -37,7 +37,7 @@ Follow these instructions to run the project.
 **Step 1: Clone the repository**
 Open terminal and run:
 ```bash
-git clone https://github.com/YourUsername/Campus-Mess-Predictor.git
+git clone https://github.com/Visaging/Mess-Nutrition-Predictor.git
 ```
 ```bash
 cd Campus-Mess-Predictor
