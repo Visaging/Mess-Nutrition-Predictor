@@ -39,7 +39,7 @@ Open terminal and run:
 git clone https://github.com/Visaging/Mess-Nutrition-Predictor.git
 ```
 ```bash
-cd Campus-Mess-Predictor
+cd Mess-Nutrition-Predictor
 ```
 **Step 2: Install Dependencies**
 Install the firebase library:
