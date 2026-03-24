@@ -1,4 +1,5 @@
-import streamlit as st
+import os
+import sys
 import pandas as pd
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.multioutput import MultiOutputRegressor
@@ -6,65 +7,109 @@ from sklearn.preprocessing import OneHotEncoder
 from sklearn.compose import ColumnTransformer
 from sklearn.pipeline import Pipeline
 
-st.set_page_config(page_title="Campus Mess Predictor", page_icon="🍽️", layout="centered")
-#url = "https://docs.google.com/spreadsheets/d/1hqSp7UFG5nCnwMOaLbR29u74k9VW9d344jlO039mkNA/gviz/tq?tqx=out:csv&sheet=Sheet1"
-@st.cache_data
-def load_data():
-    return pd.read_csv("mess_nutrition.csv")
-df = load_data()
+def clear_screen():
+    os.system('cls')
 
-categorical_features = ['Mess_Name', 'Day', 'Breakfast_Main', 'Lunch_Main', 'Snack_Choice', 'Dinner_Main']
-X = df[categorical_features]
-y = df[['Protein_g', 'Carbs_g', 'Fats_g', 'Total_kcal']]
+def print_header():
+    print("==================================================")
+    print("            CAMPUS MESS MACRO PREDICTOR            ")
+    print("==================================================\n")
 
-preprocessor = ColumnTransformer(
-    transformers=[('cat', OneHotEncoder(handle_unknown='ignore'), categorical_features)]
-)
-model = Pipeline(steps=[
-    ('preprocessor', preprocessor),
-    ('regressor', MultiOutputRegressor(RandomForestRegressor(n_estimators=100, random_state=42)))
-])
-model.fit(X, y)
+def get_user_choice(prompt, options):
+    while True:
+        print(f"\n{prompt}")
+        for idx, option in enumerate(options, 1):
+            print(f"  {idx}. {option}")
+        
+        try:
+            choice = int(input("\nEnter the number of your choice: "))
+            if 1 <= choice <= len(options):
+                return options[choice - 1]
+            else:
+                print("Invalid number. Please try again.")
+        except ValueError:
+            print("Please enter a valid number.")
 
-st.title("Campus Mess Nutrition Predictor")
-st.markdown("Select your mess and day to see your meal options.")
-st.divider()
-
-col1, col2 = st.columns(2)
-
-with col1:
-    st.subheader("Time & Place")
-    mess_name = st.selectbox("Select Mess", df['Mess_Name'].unique())
-    filtered_by_mess = df[df['Mess_Name'] == mess_name]
-
-    day = st.selectbox("Select Day", filtered_by_mess['Day'].unique())
-    filtered_by_day = filtered_by_mess[filtered_by_mess['Day'] == day]
-
-with col2:
-    st.subheader("Meals")
-    breakfast = st.selectbox("Breakfast", filtered_by_day['Breakfast_Main'].unique())
-    lunch = st.selectbox("Lunch", filtered_by_day['Lunch_Main'].unique())
-    snack = st.selectbox("Snack", filtered_by_day['Snack_Choice'].unique())
-    dinner = st.selectbox("Dinner", filtered_by_day['Dinner_Main'].unique())
-
-st.divider()
-
-if st.button("Calculate Macros", use_container_width=True):
-    input_data = pd.DataFrame({
-        'Mess_Name': [mess_name],
-        'Day': [day],
-        'Breakfast_Main': [breakfast],
-        'Lunch_Main': [lunch],
-        'Snack_Choice': [snack],
-        'Dinner_Main': [dinner]
-    })
+def main():
+    clear_screen()
+    print_header()
+    print("Initializing")
     
-    pred = model.predict(input_data)[0]
+    # 1. Load Data
+    try:
+        df = pd.read_csv('mess_nutrition.csv')
+    except FileNotFoundError:
+        print("ERROR: 'mess_nutrition.csv' not found in the current directory.")
+        print("Please ensure the dataset is in the same folder as this script.")
+        sys.exit(1)
+
+    # 2. Train Model
+    categorical_features = ['Mess_Name', 'Day', 'Breakfast_Main', 'Lunch_Main', 'Snack_Choice', 'Dinner_Main']
+    X = df[categorical_features]
+    y = df[['Protein_g', 'Carbs_g', 'Fats_g', 'Total_kcal']]
+
+    preprocessor = ColumnTransformer(
+        transformers=[('cat', OneHotEncoder(handle_unknown='ignore'), categorical_features)]
+    )
     
-    st.success("AI Prediction Complete!")
+    model = Pipeline(steps=[
+        ('preprocessor', preprocessor),
+        ('regressor', MultiOutputRegressor(RandomForestRegressor(n_estimators=100, random_state=42)))
+    ])
     
-    res1, res2, res3, res4 = st.columns(4)
-    res1.metric(label="Protein", value=f"{pred[0]:.0f}g")
-    res2.metric(label="Carbs", value=f"{pred[1]:.0f}g")
-    res3.metric(label="Fats", value=f"{pred[2]:.0f}g")
-    res4.metric(label="Calories", value=f"{pred[3]:.0f} kcal")
+    model.fit(X, y)
+
+    # 3. Interactive CLI Menu
+    while True:
+        clear_screen()
+        print_header()
+        
+        # Selection Logic
+        messes = df['Mess_Name'].unique().tolist()
+        selected_mess = get_user_choice("Select your Mess Facility:", messes)
+        
+        filtered_by_mess = df[df['Mess_Name'] == selected_mess]
+        days = filtered_by_mess['Day'].unique().tolist()
+        selected_day = get_user_choice("Select the Day of the Week:", days)
+        
+        filtered_by_day = filtered_by_mess[filtered_by_mess['Day'] == selected_day]
+        
+        breakfast = get_user_choice("Select your Breakfast:", filtered_by_day['Breakfast_Main'].unique().tolist())
+        lunch = get_user_choice("Select your Lunch:", filtered_by_day['Lunch_Main'].unique().tolist())
+        snack = get_user_choice("Select your Snack:", filtered_by_day['Snack_Choice'].unique().tolist())
+        dinner = get_user_choice("Select your Dinner:", filtered_by_day['Dinner_Main'].unique().tolist())
+
+        # 4. Make Prediction
+        input_data = pd.DataFrame({
+            'Mess_Name': [selected_mess],
+            'Day': [selected_day],
+            'Breakfast_Main': [breakfast],
+            'Lunch_Main': [lunch],
+            'Snack_Choice': [snack],
+            'Dinner_Main': [dinner]
+        })
+
+        clear_screen()
+        print("Running AI Prediction...\n")
+        pred = model.predict(input_data)[0]
+
+        print("==================================================")
+        print("            📊 YOUR DAILY MACROS 📊            ")
+        print("==================================================")
+        print(f"  Facility: {selected_mess}")
+        print(f"  Day:      {selected_day}")
+        print("--------------------------------------------------")
+        print(f"  🥩 Protein:       {pred[0]:.0f} g")
+        print(f"  🍚 Carbohydrates: {pred[1]:.0f} g")
+        print(f"  🥑 Fats:          {pred[2]:.0f} g")
+        print(f"  🔥 Total Kcal:    {pred[3]:.0f} kcal")
+        print("==================================================\n")
+
+        # 5. Loop or Exit
+        again = input("Would you like to calculate another day? (y/n): ").strip().lower()
+        if again != 'y':
+            print("\nThank you for using the Campus Nutrition Predictor.")
+            break
+
+if __name__ == "__main__":
+    main()
