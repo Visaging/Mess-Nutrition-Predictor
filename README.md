@@ -1,12 +1,12 @@
 # Mess Nutrition Predictor
 
 ## 1. Project Overview
-We've all experienced it: trying to meet our daily protein or calorie goals while eating at a college dining hall with strict, limited, and often changing menus. The Mess Nutrition Predictor is a web application that uses machine learning. It replaces the tedious task of calculating macros from dining hall meals with an AI system that figures out your exact nutritional intake based on the school dining hall and the meal choices you make.
+We all know the frustration of trying to consume a certain amount of protein or calories when eating at a college cafeteria, where the menu is strict, limited, and changes frequently. The Mess Nutrition Predictor is a web application that utilizes machine learning to take the guesswork out of calculating your macros based on the school dining hall and the meals you consume.
 
 ## 2. Features
-* **Interactive CLI Interface:** A robust, terminal-native menu system that guides the user through building a daily meal plan without requiring any GUI dependencies.
-* **Cascading Logic:** The system dynamically filters your available meal options.
-* **Multi-Mess Support:** The model is trained on a custom dataset featuring real-world meal combinations across distinct campus dining halls.
+* **Interactive CLI Interface:** A powerful menu interface that walks the user through the process of creating a daily meal plan without the need for any GUI dependencies.
+* **Cascading Logic:** The system dynamically narrows your choices for the available meals.
+* **Multi-Mess Support:** The model was trained on a custom data set with actual combinations of meals from different campus dining halls.
 
 ## 3. Technologies Used
 * **Language:** Python
@@ -56,18 +56,18 @@ python main.py
 To verify the functionality of the system, follow these steps:
 
 **Test 1: Verifying the Selection**
-* Launch the app via `python main.py`.
-* When prompted to select a facility, enter the number corresponding to `JMB`.
-* When prompted for the day, enter the number for `Thursday`.
-* _The system successfully filters the dataset and only displays "Uttappam" as the valid Breakfast option for that specific mess on that day._
+* Run the app using the command: `python main.py`.
+* Select the option for the facility by entering the number that corresponds to `JMB`.
+* Select the option for the day by entering the number that corresponds to `Thursday`.
+* _The system correctly filters the data and only shows "Uttappam" as the valid option for Breakfast for that specific mess on that day._
 
 **Test 2: Generating a Live Prediction**
-* Proceed through the menu by selecting:
+* Navigate through the menu by entering the following:
    * Breakfast: `Uttappam`
    * Lunch: `Sada Bati + Churma`
    * Snack: `Vada Pav`
    * Dinner: `Mutter Paneer + Dal Makhani`
-* _The ML pipeline processes the inputs, transforms the text into numerical data, and successfully outputs the predicted Protein, Carbs, Fats, and Calories in a formatted terminal table._
+* _The machine learning pipeline correctly processes all the input data, converts the text into numerical form, and displays the predicted Protein, Carbs, Fats, and Calories in a formatted table in the terminal._
 
 ## 7. Screenshots
 * **1. Dashboard**
