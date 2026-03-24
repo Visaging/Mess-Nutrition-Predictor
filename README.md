@@ -20,8 +20,9 @@ We've all experienced it: trying to meet our daily protein or calorie goals whil
 ```text
 Mess-Nutrition-Predictor/
 ├── Screenshots/
-    ├── Dashboard.png
-    ├── Live-Prediction.png
+    ├── 1-Dashboard.png
+    ├── 2-Selection.png
+    ├── 3-Live Prediction.png
 ├── main.py
 ├── mess_nutrition.csv
 └── README.md
@@ -69,10 +70,12 @@ To verify the functionality of the system, follow these steps:
 * _The ML pipeline processes the inputs, transforms the text into numerical data, and successfully outputs the predicted Protein, Carbs, Fats, and Calories in a formatted terminal table._
 
 ## 7. Screenshots
-**1. Dashboard**
+* **1. Dashboard**
 <img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/69f7d452-5c8e-4f7d-bba5-8d22f3821208" />
+
+* **2. Selection**
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/78763381-e970-41e3-813e-ce2110c6b8aa" />
 
-**2. Live Prediction**
+* **3. Live Prediction**
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/7e9435cc-7a37-4485-8d9f-00c0748e0b60" />
 
