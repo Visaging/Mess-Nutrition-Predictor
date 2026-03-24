@@ -70,7 +70,9 @@ To verify the functionality of the system, follow these steps:
 
 ## 7. Screenshots
 **1. Dashboard**
-<img width="1920" height="1080" alt="Dashboard" src="https://github.com/user-attachments/assets/21698542-079e-4058-ac54-5539e1a846a4" />
+<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/69f7d452-5c8e-4f7d-bba5-8d22f3821208" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/78763381-e970-41e3-813e-ce2110c6b8aa" />
 
 **2. Live Prediction**
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/f5724e11-517b-482e-8d41-1c5ff4528e94" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/7e9435cc-7a37-4485-8d9f-00c0748e0b60" />
+
