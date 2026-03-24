@@ -5,7 +5,7 @@ We've all experienced it: trying to meet our daily protein or calorie goals whil
 
 ## 2. Features
 * **Interactive CLI Interface:** A robust, terminal-native menu system that guides the user through building a daily meal plan without requiring any GUI dependencies.
-* **Cascading Logic:** The system dynamically filters your available meal options. For example, selecting "JMB Mess" on "Thursday" will only show the meals actually served there that day.
+* **Cascading Logic:** The system dynamically filters your available meal options.
 * **Multi-Mess Support:** The model is trained on a custom dataset featuring real-world meal combinations across distinct campus dining halls.
 
 ## 3. Technologies Used
